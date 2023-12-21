@@ -4,12 +4,16 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+from dotenv import load_dotenv
+import os
 
+load_dotenv() # Load environment variables from .env file
+
+# Retrieve username and password from environment variables
+username = os.environ.get('LIVEIQ_USERNAME')
+password = os.environ.get('LIVEIQ_PASSWORD')
+print("Username:", username, "Password:", password)
 def download_excel(download_path, secret):
-
-    # Retrieve username and password from environment variables
-    username = os.environ.get('LIVEIQ_USERNAME')
-    password = os.environ.get('LIVEIQ_PASSWORD')
 
     options = Options() # Configure Chrome options for the webdriver
 

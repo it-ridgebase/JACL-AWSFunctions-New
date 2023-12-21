@@ -1,1 +1,7 @@
 .env
+__pycache__/
+crawler/__pycache__/
+jacal-secrets/__pycache__/
+processor/__pycache__/
+
+```
