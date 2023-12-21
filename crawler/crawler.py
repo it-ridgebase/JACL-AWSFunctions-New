@@ -12,7 +12,7 @@ load_dotenv() # Load environment variables from .env file
 # Retrieve username and password from environment variables
 username = os.environ.get('LIVEIQ_USERNAME')
 password = os.environ.get('LIVEIQ_PASSWORD')
-print("Username:", username, "Password:", password)
+
 def download_excel(download_path, secret):
 
     options = Options() # Configure Chrome options for the webdriver
