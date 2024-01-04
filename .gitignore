@@ -1,6 +1,5 @@
 .env
-__pycache__/
-crawler/__pycache__/
-jacal-secrets/__pycache__/
-processor/__pycache__/
-```
+`/J2/crawler/__pycache__/__init__.cpython-310.pyc`
+`/J2/crawler/__pycache__/crawler.cpython-310.pyc`
+`/J2/processor/__pycache__/__init__.cpython-310.pyc`
+`/J2/processor/__pycache__/processor.cpython-310.pyc`

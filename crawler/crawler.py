@@ -4,7 +4,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-<<<<<<< HEAD
 import os
 import glob
 import logging
@@ -19,28 +18,13 @@ def get_latest_file(download_path, file_extension):
     # Get the latest file
     latest_file = max(list_of_files, key=os.path.getctime)
     return latest_file
-=======
-from dotenv import load_dotenv
-import os
-
-load_dotenv() # Load environment variables from .env file
-
-# Retrieve username and password from environment variables
-username = os.environ.get('LIVEIQ_USERNAME')
-password = os.environ.get('LIVEIQ_PASSWORD')
->>>>>>> 18a17e8fcdc30c1901517663e3a4ae860201a87a
 
 def download_excel(download_path, secret):
     logger = logging.getLogger(__name__)
     logger.debug("Starting the download process.")
     downloaded_file_path = None
 
-<<<<<<< HEAD
     options = Options()  # Configure Chrome options for the webdriver
-=======
-    options = Options() # Configure Chrome options for the webdriver
-
->>>>>>> 18a17e8fcdc30c1901517663e3a4ae860201a87a
     # Uncomment the line below to run Chrome in headless mode
     # options.add_argument("--headless")
 
